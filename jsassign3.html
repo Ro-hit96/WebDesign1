@@ -1,0 +1,25 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <div id="d1">
+
+    </div>
+    <script>var numbers2 = [1, 2, 3, 4, 5];
+        function Display() {
+            data = "<ul>"
+            for (let i = 0; i < numbers2.length; i++) {
+
+                data += "<li>" + numbers2[i] * 5 + "</li>";
+
+            }
+            data += "</ul>";
+            document.getElementById("d1").innerHTML = data;
+        }
+        Display();</script>
+</body>
+</html>

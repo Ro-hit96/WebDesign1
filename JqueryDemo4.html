@@ -1,0 +1,36 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <style>
+        ul li {
+            background-color: lightblue;
+            list-style: none;
+            width: 180px;
+            border: 2px solid;
+        }
+    </style>
+
+</head>
+<body>
+    <ul>
+        <li>C#</li>
+        <li>MVC</li>
+        <li>Angular</li>
+        <li>java</li>
+        <li>Automation Testing</li>
+    </ul>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.min.js"
+            integrity="sha256-eTyxS0rkjpLEo16uXTS0uVCS4815lc40K2iVpWDvdSY="
+            crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function () {
+            $("ul").sortable();
+        })
+    </script>
+</body>
+</html>

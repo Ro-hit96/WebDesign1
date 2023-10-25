@@ -1,0 +1,36 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    Enter Number:<input type="text" id="text1" /><br />
+    Enter Number:<input type="text" id="text2" /><br />
+    result:<input type="text" id="text3" /><br />
+    <input type="button" value="Addition" id="btn1" />
+    <p id="p1"></p>
+    <p id="p2"></p>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.min.js" integrity="sha256-eTyxS0rkjpLEo16uXTS0uVCS4815lc40K2iVpWDvdSY=" 
+            crossorigin="anonymous"></script>
+
+    <script>
+        $(document).ready(function () {
+            $("btn1").click(function () {
+                var a = $("#text1").val();
+                var b = $("#text2").val();
+                var c = parseInt(a) + parseInt(b);
+                $("#text3").val(c);
+                $("#p1").text("Addition is " + c);
+                $("p2").html("<b> Addition is" + c + "</b>");
+
+
+            })
+
+        })
+    </script>
+</body>
+</html>

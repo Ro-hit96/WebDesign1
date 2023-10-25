@@ -1,0 +1,49 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+
+    <input type="button" value="Get Data" id="btn1" />
+    <div id="d1"></div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.min.js" integrity="sha256-eTyxS0rkjpLEo16uXTS0uVCS4815lc40K2iVpWDvdSY="
+            crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function () {
+            $("#btn1").click(function () {
+                $.ajax({
+                    type: 'GET',
+                    dataType: 'json',
+                    url: 'https://jsonplaceholder.typicode.com/todos/',
+                    success: function (data) {
+                        display(data);
+                    },
+                    error: function (error) {
+                        $("#d1").text(error);
+                    }
+                });
+            });
+
+        });
+        function display(list) {
+            var list = JSON.parse(data);// JSON format data will typecast to JS object
+            var result = "<table border='1'><tr><th>user id</th><th>id</th><th>title</th><th>Complated</th></tr>";
+            for (var i = 0; i < list.length; i++) {
+                result += "<tr><td>" + list[i].userId + "</td><td>" + list[i].id + "</td><td>" +
+                    list[i].title + "</td><td>" + list[i].completed + "</td></tr>";
+            }
+            result += "</table>";
+            document.getElementById("d1").innerHTML = result;
+        }
+        function errorFunction(error) {
+            document.getElementById("d1").innerHTML = error;
+        }
+
+    </script>
+
+</body>
+</html>

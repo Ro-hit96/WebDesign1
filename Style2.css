@@ -1,0 +1,76 @@
+.carousel-inner{
+    height:650px;
+}
+
+#s1 {
+    position: relative;
+    top: 30px;
+    bottom: 20px;
+}
+
+    #s1 h3 {
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        color: #4180BF;
+    }
+
+#footer {
+    background-color: black;
+    height: 260px;
+    position: relative;
+    top: 30px;
+}
+
+    #footer h5 {
+        position: relative;
+        top: 10px;
+        margin-left: 30px;
+        color: darkgray;
+    }
+
+    #footer ul li {
+        list-style: none;
+    }
+
+        #footer ul li a {
+            position: relative;
+            top: 10px;
+            color: white !important;
+            text-decoration: none;
+            text-align: left;
+        }
+
+    #footer p {
+        color: white;
+    }
+
+    #footer hr {
+        color: white;
+    }
+
+    #footer .fa {
+        color: white;
+    }
+#register {
+    margin: 50px 20px 30px 30px;
+}
+
+.custom {
+    box-shadow: 3px 2px 2px lightgray;
+    border: solid lightgray;
+}
+
+#Contact {
+    position: relative;
+    top: 20px;
+    padding: 5px 20px;
+
+}
+.text-body-secondary {
+    border: 1px solid black;
+   font-family:'Times New Roman', Times, serif ;
+   font-size:large;
+    color:orange;
+    
+}
+
+
